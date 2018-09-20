@@ -1,3 +1,4 @@
+//Sullivan O'Connor 9/20/18
 package soconnor;
 
 public class soconnorLib
@@ -29,22 +30,19 @@ public class soconnorLib
         return reversed.equals(var);
     }
 
-    public static String palindrome(String var)
+    public static String cutOut (String mainStr, String subStr)
     {
-        String reversed = "";
-        for(int i = var.length()-1; i >= 0; i--)
+        int index = mainStr.indexOf(subStr);
+        String newStr = "";
+        if(index == 0)
         {
-            String letter = var.substring(i,i+1);
-            reversed = reversed + letter;
-        }
-        if(reversed.equals(var)==true)
-        {
-            return "true";
+            newStr = mainStr.substring(index + subStr.length());
+            return newStr;
         }
         else
         {
-            return "false";
+            newStr = (mainStr.substring(0,index) + mainStr.substring(index + subStr.length()));
+            return newStr;
         }
-
     }
 }
