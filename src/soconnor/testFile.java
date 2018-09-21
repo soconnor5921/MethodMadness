@@ -15,7 +15,9 @@ public class testFile
     public static void main(String[] args)
     {
         boolean palindrome = isPalindrome("car");
+        boolean palindrome1 = isPalindrome("racemaniac");
         println(String.valueOf(palindrome));
+        println(String.valueOf(palindrome1));
 
         println(cutOut("catatonic cat","cat"));
 
