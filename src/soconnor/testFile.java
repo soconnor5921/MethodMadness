@@ -8,6 +8,7 @@ import static soconnor.soconnorLib.sumUpTo;
 
 
 
+
 public class testFile
 {
     public static void main(String[] args)
@@ -18,6 +19,8 @@ public class testFile
         println(cutOut("catatonic cat","cat"));
 
         println(String.valueOf(sumUpTo(10)));
+
+
 
 
     }
