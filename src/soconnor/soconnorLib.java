@@ -8,17 +8,6 @@ public class soconnorLib
         System.out.println(str);
     }
 
-    public static String reverse(String var)
-    {
-        String reversed = "";
-        for(int i = var.length()-1; i >= 0; i--)
-        {
-            String letter = var.substring(i,i+1);
-            reversed = reversed + letter;
-        }
-        return reversed;
-    }
-
     public static boolean isPalindrome(String var)
     {
         String reversed = "";
@@ -44,5 +33,15 @@ public class soconnorLib
             newStr = (mainStr.substring(0,index) + mainStr.substring(index + subStr.length()));
             return newStr;
         }
+    }
+
+    public static int sumUpTo(int num)
+    {
+        int sum = 0;
+        for(int i = 0; i <= num; i++)
+        {
+            sum += i;
+        }
+        return sum;
     }
 }
