@@ -6,6 +6,7 @@ import static soconnor.soconnorLib.println;
 import static soconnor.soconnorLib.cutOut;
 import static soconnor.soconnorLib.sumUpTo;
 import static soconnor.soconnorLib.multiplicationTable;
+import static soconnor.soconnorLib.fooBarBaz;
 
 
 
@@ -15,15 +16,15 @@ public class testFile
     public static void main(String[] args)
     {
         boolean palindrome = isPalindrome("car");
-        boolean palindrome1 = isPalindrome("racemaniac");
         println(String.valueOf(palindrome));
-        println(String.valueOf(palindrome1));
 
         println(cutOut("catatonic cat","cat"));
 
         println(String.valueOf(sumUpTo(10)));
 
         multiplicationTable(2,10);
+
+        fooBarBaz(20);
 
 
 
